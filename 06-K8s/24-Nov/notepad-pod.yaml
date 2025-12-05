@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: multic-pod
+ labels:
+   name: textpad
+spec:
+ containers:
+ - name: c1
+   image: nginx
+   ports:
+     - containerPort: 80
+   resources:
+     limits:
+       memory: "128Mi"
+       cpu: "500m"    
+ - name: c2
+   image: tomcat 
+   ports:
+     - containerPort: 8080
+   resources:
+       limits:
+         memory: "128Mi"
+         cpu: "500m"

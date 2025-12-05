@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node1-pod
+  labels:
+    app.kubernetes.io/name: node1-pod
+spec:
+  containers:
+  - name: node1-pod
+    image: nginx
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
+  nodeName: aks-agentpool-54867566-vmss000001

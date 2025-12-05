@@ -1,0 +1,1 @@
+mytag = "Prod-rg-created by terraform"

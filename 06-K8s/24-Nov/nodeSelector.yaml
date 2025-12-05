@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodeselector-pod
+  labels:
+    app.kubernetes.io/name: node1-pod
+spec:
+  containers:
+  - name: node1-pod
+    image: nginx
+    ports:
+      - containerPort: 80
+  nodeSelector:
+   env: prod

@@ -1,4 +1,4 @@
-# Terraform 
+# Azure Terraform 
 ## 1\. Create the App Registration (Service Principal Identity) 👤
 
 This step creates the identity in Microsoft Entra ID (formerly Azure Active Directory) that Terraform will use to log in.
